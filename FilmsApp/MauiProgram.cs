@@ -1,5 +1,8 @@
 ﻿using CommunityToolkit.Maui;
+using FilmsApp.Pages;
 using Microsoft.Extensions.Logging;
+using Services;
+using ViewModels;
 
 namespace FilmsApp
 {
@@ -20,6 +23,11 @@ namespace FilmsApp
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
+            builder.Services.AddHttpClient(TmdbService.TmdbHttpClientName, httpClient => httpClient.BaseAddress = new Uri("https://api.themoviedb.org"));
+
+            builder.Services.AddSingleton<TmdbService>();
+            builder.Services.AddSingleton<HomeViewModel>();
+            builder.Services.AddSingleton<MainPage>();
 
             return builder.Build();
         }
