@@ -1,5 +1,4 @@
-﻿using Android.App;
-using Models;
+﻿using Models;
 using System;
 using System.Collections.Generic;
 using System.Net.Http.Json;
@@ -81,7 +80,7 @@ namespace Services
             Thumbnail = Thumbnail,
             ThumbnailSmall = ThumbnailSmall,
             ThumbnailUrl = ThumbnailUrl
-        }
+        };
     }
     public class VideosWrapper
     {
