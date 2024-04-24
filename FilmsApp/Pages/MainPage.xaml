@@ -20,7 +20,7 @@
     
     <Grid Margin="0"
           Padding="0">
-            <ScrollView BackgroundColor="Black">
+        <ScrollView BackgroundColor="Black">
             <VerticalStackLayout>
                 <Grid HeightRequest="500">
                     <Image Aspect="Center"
@@ -45,7 +45,7 @@
                                    Style="{StaticResource MenuLabel}"/>
                         </FlexLayout>
                     </Grid>
-                    
+
                     <HorizontalStackLayout VerticalOptions="End"
                                            HorizontalOptions="Center"
                                            Spacing="50">
@@ -58,7 +58,7 @@
                                    HorizontalTextAlignment="Center"/>
                         </VerticalStackLayout>
 
-                        <Border StrokeShape="RoundRectable 5"
+                        <Border StrokeShape="RoundRectangle 5"
                                 BackgroundColor="White"
                                 Padding="20, 5">
                             <HorizontalStackLayout Spacing="5"
@@ -89,23 +89,33 @@
                                    HorizontalTextAlignment="Center"
                                    Margin="0, 10, 0, 0"/>
                         </VerticalStackLayout>
-                        
+
                     </HorizontalStackLayout>
-                
+
                 </Grid>
             </VerticalStackLayout>
         </ScrollView>
-        <Grid>
-            <Grid HeightRequest="35"
+        <Grid HeightRequest="35"
                   VerticalOptions="Start">
-                <FlexLayout>
-                    <Image Source="ntflx_logo"
-                           Aspect="AspectFit"
+            <FlexLayout JustifyContent="SpaceBetween">
+                <Image Source="ntflx_logo"
+                           Aspect="AspectFill"
                            VerticalOptions="Start"
                            HeightRequest="30"
                            WidthRequest="30"/>
-                </FlexLayout>
-            </Grid>
+                <HorizontalStackLayout VerticalOptions="Center"
+                                           Spacing="15"
+                                           Margin="5, 0">
+                    <ImageButton Source="search.png"
+                                     Aspect="AspectFill"
+                                     HeightRequest="20"
+                                     WidthRequest="20"/>
+                    <ImageButton Source="user.png"
+                                     Aspect="AspectFill"
+                                     HeightRequest="20"
+                                     WidthRequest="20"/>
+                </HorizontalStackLayout>
+            </FlexLayout>
         </Grid>
     </Grid>
 
