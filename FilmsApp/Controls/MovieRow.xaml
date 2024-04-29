@@ -3,13 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:models="clr-namespace:Models"
              xmlns:controls="clr-namespace:Controls"
-             x:Class="Controls.MovieRow">
-    <VerticalStackLayout BackgroundColor="Black">
+             x:Class="Controls.MovieRow"
+             x:Name="this">
+    <VerticalStackLayout BackgroundColor="Black"
+                         BindingContext="{x:Reference this}">
         <Label Text="{Binding Heading}"
                FontAttributes="Bold"
                FontSize="16"
                HorizontalTextAlignment="Start"
-               Margin="10, 0, 0, 10"/>
+               Margin="10, 15, 0, 2"/>
         
         <CollectionView ItemsSource="{Binding Movies}">
         <CollectionView.ItemsLayout>

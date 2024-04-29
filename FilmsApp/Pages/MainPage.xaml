@@ -5,6 +5,7 @@
              Shell.NavBarIsVisible="False"
              BackgroundColor="Black"
              xmlns:vm="clr-namespace:ViewModels"
+             xmlns:controls="clr-namespace:Controls"
              x:DataType="vm:HomeViewModel">
 
     <ContentPage.Resources>
