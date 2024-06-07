@@ -1,4 +1,4 @@
-﻿namespace Models
+﻿namespace FilmsApp.Models
 {
     public class Media
     {
@@ -9,9 +9,10 @@
         public string Thumbnail { get; set; }
         public string ThumbnailSmall { get; set; }
         public string ThumbnailUrl { get; set; }
-        public string BackdropPath { get; set; }
 
         public string Overview { get; set; }
         public string ReleaseDate { get; set; }
+
+        public string TrailerURL { get; set; }
     }
 }
