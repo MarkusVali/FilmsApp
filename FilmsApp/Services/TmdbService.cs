@@ -10,7 +10,7 @@ namespace FilmsApp.Services
 {
     public partial class TmdbService
     {
-        private const string ApiKey = "3b0f4e16a771da77c85a8e5de9dccb66";
+        private const string ApiKey = "";
         public const string TmdbHttpClientName = "TmdbClient";
 
         private readonly IHttpClientFactory _httpClientFactory;
